@@ -34,12 +34,12 @@ export type AddUndefined<T> = { [P in keyof T]: T[P] | undefined };
 
 export type ConnectivityArgs = {
   pingTimeout: number;
-  pingServerUrl: string;
-  shouldPing: boolean;
-  pingInterval: number;
-  pingOnlyIfOffline: boolean;
-  pingInBackground: boolean;
-  httpMethod: HTTPMethod;
+  pingServerUrl?: string;
+  shouldPing?: boolean;
+  pingInterval?: number;
+  pingOnlyIfOffline?: boolean;
+  pingInBackground?: boolean;
+  httpMethod?: HTTPMethod;
   customHeaders?: HTTPHeaders;
 };
 
